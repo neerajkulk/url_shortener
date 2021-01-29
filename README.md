@@ -6,6 +6,10 @@ This is a simple url shortener written in ```node.js```. Type in any url and it 
 - ```npm start```
 - go to ```http://localhost:3000/```
 
+
+![screenshot](./screenshot.png)
+
+
 The code works by randomly creating a 5 digit string, that maps to the original URL. These mappings are stored in ```urlDB.json```. When the shortened URL is typed in the browser, we find the corresponding long url and redirect you there.
 
 The random ID's are created in ```createUniqueID()``` of ```index.js``` which returns a randomly generated string that's not currently in ```urlDB.json```. 
